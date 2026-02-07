@@ -1,0 +1,34 @@
+def estudiantes_aprobados():
+    cantidad = int(input("Digite la cantidad de estudiantes: "))
+    m = int(input("Digite la cantidad de notas por estudiante: "))
+
+    aprobados = []
+    nombres = []
+    promedios = []
+
+    info = input("Digite por cada estudiante: nombre y luego sus notas (todo separado por espacios): ").split()
+    while len(info) < cantidad * (m + 1):
+        info += input().split()
+
+    p = 0
+    for i in range(cantidad):
+        nombres.append(info[p])
+        p += 1
+
+        s = 0.0
+        for _ in range(m):
+            s += float(info[p].replace(",", "."))
+            p += 1
+
+        promedios.append(s / m)
+
+    for i in range(cantidad):
+        if promedios[i] >= 3.0:
+            aprobados.append(nombres[i])
+            print(nombres[i], "Promedio:", round(promedios[i], 2), "APROBO")
+        else:
+            print(nombres[i], "Promedio:", round(promedios[i], 2), "NO APROBO")
+
+    print("Estudiantes aprobados:", aprobados)
+
+estudiantes_aprobados()
