@@ -7,3 +7,6 @@ En la semana 1 se puede evidenciar las pruebas técnicas para el diagnóstico en
 
 # Semana 2
 En la semana dos introdujimos el tema de diseño, en el cual se puede evidenciar la evolución del diseño en el algoritmo planteado, así mismo, encontrará ejercicios del análisis de tiempo de ejecucón de un código.
+
+# Semana 3
+Se le dió comienzo al tema divide y conquista, de tal manera que se tiene que aplicar al problema ya planteado y resolverlo usando un algoritmo de dividir y conquistar, en el contenido de la carpeta encontrará el código junto a du respectivo diseño, adicionalmente encontrará la solución de los ejercicios propuestos en las notas de clase.
